@@ -1,0 +1,6 @@
+module Pods_base_TS_2022 {
+  umbrella header "Pods-base_TS_2022-umbrella.h"
+
+  export *
+  module * { export * }
+}
