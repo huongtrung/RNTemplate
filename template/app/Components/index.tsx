@@ -2,10 +2,9 @@
 import CustomPressable from './CustomPressable'
 import InputCheckbox from './FormInput/InputCheckbox'
 import InputSwitch from './FormInput/InputSwitch'
-import CustomModal from './CustomModal'
 import FormInput from './FormInput'
 import CustomText from './CustomText'
-import CustomLoading from './CustomLoading'
+import GlobalLoading from './GlobalLoading'
 import CanView from './CanView'
 import InputRadio from './FormInput/InputRadio'
 import InputSelect from './FormInput/InputSelect'
@@ -18,14 +17,13 @@ export {
   CustomPressable,
   InputCheckbox,
   InputSwitch,
-  CustomModal,
   FormInput,
   CustomText,
   CanView,
   InputRadio,
   InputSelect,
   InputTextArea,
-  CustomLoading,
+  GlobalLoading,
   GlobalModal,
   TextView,
   FlatListView,

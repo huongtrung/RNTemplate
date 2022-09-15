@@ -74,12 +74,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-base_TS_2022-base_TS_2022Tests.xcscheme</key>
+		<key>Pods-BaseRN-BaseRNTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-base_TS_2022.xcscheme</key>
+		<key>Pods-BaseRN.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -95,6 +95,16 @@
 			<false/>
 		</dict>
 		<key>RCTTypeSafety.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RNCAsyncStorage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RNCMaskedView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -175,6 +185,11 @@
 			<false/>
 		</dict>
 		<key>React-RCTVibration.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>React-bridging.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

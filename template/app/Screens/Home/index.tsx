@@ -1,7 +1,6 @@
 import {View, Text, TouchableOpacity, ScrollView} from 'react-native'
 import React, {useState, useEffect} from 'react'
 import {
-  CustomModal,
   FormInput,
   CustomText,
   TextView,
@@ -194,11 +193,11 @@ export default function HomeScreen() {
       </TouchableOpacity>
       <FlatListView data={userList} renderItem={renderItem} />
 
-      <CustomModal isVisible={isShow}>
+      {/* <CustomModal isVisible={isShow}>
         <TouchableOpacity onPress={() => setShow(!isShow)}>
           <Text>aaaaa</Text>
         </TouchableOpacity>
-      </CustomModal>
+      </CustomModal> */}
     </View>
   )
 }

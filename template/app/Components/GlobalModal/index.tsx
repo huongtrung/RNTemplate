@@ -2,7 +2,7 @@
 import React from 'react'
 import {StyleSheet, View, Text} from 'react-native'
 import {CommonStyles} from '@/Themes'
-import {CustomModal, CustomPressable} from '..'
+// import {CustomModal, CustomPressable} from '..'
 import {Badge} from 'native-base'
 import {useDispatch, useSelector} from 'react-redux'
 import {rootActions} from '@/ReduxSaga/Root/RootRedux'
@@ -34,7 +34,7 @@ const GlobalModal = () => {
       <View style={styles.wrapperModal}>
         <Text style={styles.message}>{title}</Text>
         <Text style={styles.message}>{rootState.messageModal}</Text>
-        <CustomPressable
+        {/* <CustomPressable
           onPress={onCloseModal}
           style={styles.buttonContainerStyle}>
           <View style={styles.wrapperButton}>
@@ -48,17 +48,19 @@ const GlobalModal = () => {
               OK
             </Badge>
           </View>
-        </CustomPressable>
+        </CustomPressable> */}
       </View>
     )
   }
 
   return (
-    <CustomModal
-      isVisible={rootState.isVisibleModal}
-      containerStyle={styles.containerStyle}>
-      {renderModal(rootState.typeModal)}
-    </CustomModal>
+    <View>
+    </View>
+    // <CustomModal
+    //   isVisible={rootState.isVisibleModal}
+    //   containerStyle={styles.containerStyle}>
+    //   {renderModal(rootState.typeModal)}
+    // </CustomModal>
   )
 }
 

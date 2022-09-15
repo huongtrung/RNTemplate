@@ -177,6 +177,10 @@ namespace facebook {
       return static_cast<ObjCTurboModule&>(turboModule).invokeObjCMethod(rt, VoidKind, "showShareActionSheetWithOptions", @selector(showShareActionSheetWithOptions:failureCallback:successCallback:), args, count);
     }
 
+    static facebook::jsi::Value __hostFunction_NativeActionSheetManagerSpecJSI_dismissActionSheet(facebook::jsi::Runtime& rt, TurboModule &turboModule, const facebook::jsi::Value* args, size_t count) {
+      return static_cast<ObjCTurboModule&>(turboModule).invokeObjCMethod(rt, VoidKind, "dismissActionSheet", @selector(dismissActionSheet), args, count);
+    }
+
     NativeActionSheetManagerSpecJSI::NativeActionSheetManagerSpecJSI(const ObjCTurboModule::InitParams &params)
       : ObjCTurboModule(params) {
         
@@ -185,6 +189,9 @@ namespace facebook {
         
         methodMap_["showShareActionSheetWithOptions"] = MethodMetadata {3, __hostFunction_NativeActionSheetManagerSpecJSI_showShareActionSheetWithOptions};
         setMethodArgConversionSelector(@"showShareActionSheetWithOptions", 0, @"JS_NativeActionSheetManager_SpecShowShareActionSheetWithOptionsOptions:");
+        
+        methodMap_["dismissActionSheet"] = MethodMetadata {0, __hostFunction_NativeActionSheetManagerSpecJSI_dismissActionSheet};
+        
     }
   } // namespace react
 } // namespace facebook
@@ -228,6 +235,10 @@ namespace facebook {
 
     static facebook::jsi::Value __hostFunction_NativeAnimatedModuleSpecJSI_createAnimatedNode(facebook::jsi::Runtime& rt, TurboModule &turboModule, const facebook::jsi::Value* args, size_t count) {
       return static_cast<ObjCTurboModule&>(turboModule).invokeObjCMethod(rt, VoidKind, "createAnimatedNode", @selector(createAnimatedNode:config:), args, count);
+    }
+
+    static facebook::jsi::Value __hostFunction_NativeAnimatedModuleSpecJSI_updateAnimatedNodeConfig(facebook::jsi::Runtime& rt, TurboModule &turboModule, const facebook::jsi::Value* args, size_t count) {
+      return static_cast<ObjCTurboModule&>(turboModule).invokeObjCMethod(rt, VoidKind, "updateAnimatedNodeConfig", @selector(updateAnimatedNodeConfig:config:), args, count);
     }
 
     static facebook::jsi::Value __hostFunction_NativeAnimatedModuleSpecJSI_getValue(facebook::jsi::Runtime& rt, TurboModule &turboModule, const facebook::jsi::Value* args, size_t count) {
@@ -306,6 +317,10 @@ namespace facebook {
       return static_cast<ObjCTurboModule&>(turboModule).invokeObjCMethod(rt, VoidKind, "removeListeners", @selector(removeListeners:), args, count);
     }
 
+    static facebook::jsi::Value __hostFunction_NativeAnimatedModuleSpecJSI_queueAndExecuteBatchedOperations(facebook::jsi::Runtime& rt, TurboModule &turboModule, const facebook::jsi::Value* args, size_t count) {
+      return static_cast<ObjCTurboModule&>(turboModule).invokeObjCMethod(rt, VoidKind, "queueAndExecuteBatchedOperations", @selector(queueAndExecuteBatchedOperations:), args, count);
+    }
+
     NativeAnimatedModuleSpecJSI::NativeAnimatedModuleSpecJSI(const ObjCTurboModule::InitParams &params)
       : ObjCTurboModule(params) {
         
@@ -316,6 +331,9 @@ namespace facebook {
         
         
         methodMap_["createAnimatedNode"] = MethodMetadata {2, __hostFunction_NativeAnimatedModuleSpecJSI_createAnimatedNode};
+        
+        
+        methodMap_["updateAnimatedNodeConfig"] = MethodMetadata {2, __hostFunction_NativeAnimatedModuleSpecJSI_updateAnimatedNodeConfig};
         
         
         methodMap_["getValue"] = MethodMetadata {2, __hostFunction_NativeAnimatedModuleSpecJSI_getValue};
@@ -374,6 +392,9 @@ namespace facebook {
         
         methodMap_["removeListeners"] = MethodMetadata {1, __hostFunction_NativeAnimatedModuleSpecJSI_removeListeners};
         
+        
+        methodMap_["queueAndExecuteBatchedOperations"] = MethodMetadata {1, __hostFunction_NativeAnimatedModuleSpecJSI_queueAndExecuteBatchedOperations};
+        
     }
   } // namespace react
 } // namespace facebook
@@ -396,6 +417,10 @@ namespace facebook {
 
     static facebook::jsi::Value __hostFunction_NativeAnimatedTurboModuleSpecJSI_createAnimatedNode(facebook::jsi::Runtime& rt, TurboModule &turboModule, const facebook::jsi::Value* args, size_t count) {
       return static_cast<ObjCTurboModule&>(turboModule).invokeObjCMethod(rt, VoidKind, "createAnimatedNode", @selector(createAnimatedNode:config:), args, count);
+    }
+
+    static facebook::jsi::Value __hostFunction_NativeAnimatedTurboModuleSpecJSI_updateAnimatedNodeConfig(facebook::jsi::Runtime& rt, TurboModule &turboModule, const facebook::jsi::Value* args, size_t count) {
+      return static_cast<ObjCTurboModule&>(turboModule).invokeObjCMethod(rt, VoidKind, "updateAnimatedNodeConfig", @selector(updateAnimatedNodeConfig:config:), args, count);
     }
 
     static facebook::jsi::Value __hostFunction_NativeAnimatedTurboModuleSpecJSI_getValue(facebook::jsi::Runtime& rt, TurboModule &turboModule, const facebook::jsi::Value* args, size_t count) {
@@ -474,6 +499,10 @@ namespace facebook {
       return static_cast<ObjCTurboModule&>(turboModule).invokeObjCMethod(rt, VoidKind, "removeListeners", @selector(removeListeners:), args, count);
     }
 
+    static facebook::jsi::Value __hostFunction_NativeAnimatedTurboModuleSpecJSI_queueAndExecuteBatchedOperations(facebook::jsi::Runtime& rt, TurboModule &turboModule, const facebook::jsi::Value* args, size_t count) {
+      return static_cast<ObjCTurboModule&>(turboModule).invokeObjCMethod(rt, VoidKind, "queueAndExecuteBatchedOperations", @selector(queueAndExecuteBatchedOperations:), args, count);
+    }
+
     NativeAnimatedTurboModuleSpecJSI::NativeAnimatedTurboModuleSpecJSI(const ObjCTurboModule::InitParams &params)
       : ObjCTurboModule(params) {
         
@@ -484,6 +513,9 @@ namespace facebook {
         
         
         methodMap_["createAnimatedNode"] = MethodMetadata {2, __hostFunction_NativeAnimatedTurboModuleSpecJSI_createAnimatedNode};
+        
+        
+        methodMap_["updateAnimatedNodeConfig"] = MethodMetadata {2, __hostFunction_NativeAnimatedTurboModuleSpecJSI_updateAnimatedNodeConfig};
         
         
         methodMap_["getValue"] = MethodMetadata {2, __hostFunction_NativeAnimatedTurboModuleSpecJSI_getValue};
@@ -541,6 +573,9 @@ namespace facebook {
         
         
         methodMap_["removeListeners"] = MethodMetadata {1, __hostFunction_NativeAnimatedTurboModuleSpecJSI_removeListeners};
+        
+        
+        methodMap_["queueAndExecuteBatchedOperations"] = MethodMetadata {1, __hostFunction_NativeAnimatedTurboModuleSpecJSI_queueAndExecuteBatchedOperations};
         
     }
   } // namespace react

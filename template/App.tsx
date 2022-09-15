@@ -13,7 +13,7 @@ import {store} from './app/Config/ReduxConfig/Store'
 import NavigationService from './app/Navigation/NavigationService'
 import {LogBox, SafeAreaView, StatusBar} from 'react-native'
 import {CommonStyles} from '@/Themes'
-import {GlobalModal, CustomLoading} from '@/Components'
+import {GlobalModal} from '@/Components'
 import GlobalLoading, {globalLoadingRef} from '@/Components/GlobalLoading'
 import GlobalMessage, {globalMessageRef} from '@/Components/GlobalMessage'
 import {API_URL} from './env.json'
@@ -35,7 +35,7 @@ const App = () => {
             />
             <NavigationService />
             <GlobalModal />
-            <CustomLoading />
+            {/* <CustomLoading /> */}
             <GlobalLoading ref={globalLoadingRef} />
             <GlobalMessage ref={globalMessageRef} />
           </Provider>
